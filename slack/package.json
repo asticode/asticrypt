@@ -1,0 +1,41 @@
+{
+  "name": "Astislack",
+  "version": "0.0.1",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "build"
+  },
+  "repository": "https://github.com/asticode/js-astislack",
+  "author": "asticode",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "electron-builder": "^20.28.2"
+  },
+  "dependencies": {
+    "aes-js": "^3.1.1",
+    "decode-html": "^2.0.0",
+    "formidable": "^1.2.1",
+    "request": "^2.88.0",
+    "scrypt-js": "^2.0.3",
+    "ws": "^6.0.0"
+  },
+  "build": {
+    "appId": "Astislack",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    }
+  }
+}
